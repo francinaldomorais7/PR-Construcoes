@@ -7,7 +7,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 20px;
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -19,7 +19,6 @@ body {
 }
 
 a {
-    /* text-navigation: none; */
     color: inherit;
 }
 
@@ -75,6 +74,37 @@ nav a:hover {
     transform: translateY(-4px);
 }
 
+.midia {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/fachaa.jpeg');
+    width: 100%;
+    min-height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.streams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.img-strams {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
 /* --- CORPO / VITRINE DE PRODUTOS --- */
 main {
     flex: 1;
@@ -104,7 +134,7 @@ h1::after {
 /* Implementação do CSS GRID pedido */
 .grid-produtos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 25px;
 }
 
@@ -148,7 +178,6 @@ h1::after {
 .produto-preco {
     font-size: 1.3rem;
     color: #22c55e;
-    /* Verde para preço */
     font-weight: bold;
     margin-bottom: 15px;
 }
