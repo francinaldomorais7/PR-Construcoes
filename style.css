@@ -74,7 +74,7 @@ nav a:hover {
     transform: translateY(-4px);
 }
 
-.midia {
+.container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/fachaa.jpeg');
     width: 100%;
     min-height: 800px;
@@ -88,21 +88,13 @@ nav a:hover {
     box-sizing: border-box;
 }
 
-.streams {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    border-radius: 10px;
-    width: 100%;
+.frase {
+    color: #fff;
+    font-size: 3.9rem;
     max-width: 1200px;
-}
-
-.img-strams {
-    height: 500px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
 }
 
 /* --- CORPO / VITRINE DE PRODUTOS --- */
@@ -131,7 +123,6 @@ h1::after {
     border-radius: 2px;
 }
 
-/* Implementação do CSS GRID pedido */
 .grid-produtos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -227,5 +218,9 @@ footer {
 
     nav ul {
         gap: 15px;
+    }
+
+    .frase {
+        font-size: 1.9rem;
     }
 }
